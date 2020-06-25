@@ -1,3 +1,8 @@
+:root{
+    --color-green : #50fa7b;
+}
+
+
 *{
     margin: 0;
     padding:0;
@@ -6,7 +11,8 @@
 
 body{
     background : #282a36;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 
@@ -16,13 +22,13 @@ header{
     background:rgba(0,0, 0, 0.1)
 }
 
-header div{
+.Links {
     text-align: center;
     
 
 }
 
-header div a {
+.Links a {
     color: white;
     font-size: 18px;
     line-height: 28px;
@@ -31,7 +37,52 @@ header div a {
     
 }
 
-header div a:hover{
-    color: #50fa7b;
-    transition: color 200 ms
+.Links a:hover{
+    color:  var(--color-green);
+    transition: colo ms
+}
+
+#wrapper{
+    text-align: center;
+    padding: 32px;
+}
+
+#wrapper img{
+    max-width:300px;
+    max-height:300px;
+     border-radius: 50% ;
+     border: 5px solid  var(--color-green);
+     margin-bottom: 32px;
+
+}
+
+#wrapper h1{
+    font-size: 34px;
+    line-height: 52px;
+    font-weight: initial;
+   
+}
+
+#wrapper h2{
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#wrapper p a {
+    color:  var(--color-green);
+}
+
+#links-footer a{
+    border-bottom: 1px solid var(--color-green);
+    text-decoration: underline;
 }
